@@ -1,8 +1,13 @@
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { AppRegistry, View } from 'react-native';
+import Header from './src/components/Header.js';
+import Profile from './src/components/Profile.js';
 
 const App = () => (
-  <Text> Significant Others </Text>
+  <View>
+    <Header headerText={'Dominique Cunningham'} />
+    <Profile />
+  </View>
 );
 
 AppRegistry.registerComponent('udemyrnr', () => App);
